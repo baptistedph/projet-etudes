@@ -1,0 +1,114 @@
+#cover {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  color: white;
+}
+
+#cover h1 {
+  font-size: 100px;
+}
+
+#cover h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.circle {
+  width: 100vw;
+  height: 100vw;
+  min-width: 1200px;
+  min-height: 1200px;
+  position: absolute;
+  background: var(--blue);
+  border-radius: 50%;
+  z-index: -99;
+  top: 50%;
+  right: 0;
+  transform: translate(30%, -50%);
+}
+
+.circle + div {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+.contact div {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.contact span {
+  margin-left: 10px;
+}
+
+.date {
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  font-weight: 500;
+}
+
+@media (max-width: 1500px) {
+
+  .circle {
+    transform: translate(20%, -50%);
+  }
+
+}
+
+@media (max-width: 1280px) {
+
+  #cover h1 {
+    font-size: 80px;
+  }
+  
+  #cover h3 {
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    transform: none;
+    top: 0;
+    left: 0;
+  }
+
+  .circle + div {
+    left: 10%;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  #cover h1 {
+    font-size: 50px;
+  }
+  
+  #cover h3 {
+    font-size: 20px;
+  }
+
+  #cover .contact {
+    display: none;
+  }
+
+}

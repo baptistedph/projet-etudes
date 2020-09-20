@@ -1,0 +1,33 @@
+.nav {
+  position: fixed;
+  right: 0;
+  width: 300px;
+  top: 50%;
+  z-index: 99;
+  transform: translateY(-50%);
+}
+
+.nav .item {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.nav .item.active a {
+  color: var(--blue);
+}
+
+.nav li ul .item a {
+  font-size: 10px;
+}
+
+.nav li ul .item a:hover {
+  transform: translateY(-120%);
+}
+
+@media (max-width: 768px) {
+
+  .nav {
+    display: none;
+  }
+
+}

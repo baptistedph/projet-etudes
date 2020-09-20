@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --blue: #89ACF3
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div {
+  width: 50%;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.title2 {
+  font-size: 30px;
+  color: #aaa;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 30px;
+  line-height: 30px;
+}
+
+.subtitle + .title2,
+ul + .title2 {
+  margin-top: 50px;
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+}
+
+.legend {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--blue);
+}
+
+.legend + p {
+  margin-top: 20px;
+}
+
+.legend span {
+  font-size: 15px;
+}
+
+.modules {
+  margin-top: 30px;
+  list-style: square inside;
+}
+
+.item {
+  margin-top: 10px;
+  overflow: hidden;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.item a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.4s;
+}
+
+.item a:hover {
+  transform: translateY(-100%);
+}
+
+.item a::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+li ul .item a {
+  color: #aaa;
+  font-size: 15px;
+  margin-left: 25px;
+}
+
+@media (max-width: 1280px) {
+
+  .container:not(.summary) {
+    align-items: flex-start;
+  }
+
+  .container > div {
+    width: 60%;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .container > div {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .container > div {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .title2 {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .item {
+    font-size: 15px;
+  }
+
+}

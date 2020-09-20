@@ -1,0 +1,11 @@
+#summary {
+  height: 100vh;
+}
+
+#summary > ul {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+}

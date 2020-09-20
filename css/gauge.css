@@ -1,0 +1,6 @@
+.gauge {
+  position: fixed;
+  height: 10px;
+  background: var(--blue);
+  z-index: 99;
+}
