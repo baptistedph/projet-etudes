@@ -1,0 +1,48 @@
+table {
+  border-collapse: collapse; 
+  margin-top: 50px;
+  width: 100%;
+  font-size: 18px;
+}
+
+table td,
+table th {
+  text-align: center;
+  border: solid 1px black;
+  padding: 8px 10px;
+}
+
+.right {
+  text-align: right;
+}
+
+.lb {
+  background: #8aacf344;
+}
+
+.db {
+  background: #8aacf3;
+  color: white;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.empty {
+  border: none;
+}
+
+@media (max-width: 576px) {
+
+  table {
+    word-break: break-all;
+    font-size: 10px;
+  }
+
+  table th,
+  table td {
+    padding: 8px 4px;
+  }
+
+}

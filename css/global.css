@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+#scrollbar {
+  height: 100vh;
+}
+
 :root {
   --blue: #89ACF3
 }
