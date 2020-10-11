@@ -13,129 +13,68 @@
   <link rel="stylesheet" href="./css/tables.css">
   <link rel="stylesheet" href="./css/footer.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-  <script src="./js/gauge.js" defer></script>
-  <script src="./js/animations.js" defer></script>
-  <script src="./js/refresh.js" defer></script>
-  <title>Projet d'études</title>
+  <title>Projet d'études - Baptiste DAUPHOUY</title>
 </head>
 
 <body>
-  <div class="gauge"></div>
-  <div class="nav">
-    <ul>
-      <li class="item item1">
-        <a href="#1" data-text="1. Présentation personnelle">1. Présentation personnelle</a>
-      </li>
-      <li class="item item2">
-        <a href="#2" data-text="2. Nature du projet">2. Nature du projet</a>
-      </li>
-      <li class="item item3">
-        <a href="#3" data-text="3. L'école">3. L'école</a>
-      </li>
-      <li>
-        <div class="item item4"><a href="#4" data-text="4. La formation">4. La formation</a></div>
-        <ul>
-          <li class="item"><a href="#4.1" data-text="4.1. Cursus">4.1. Cursus</a></li>
-          <li class="item"><a href="#4.2" data-text="4.2. Points forts">4.2. Points forts</a></li>
-          <li class="item"><a href="#4.3" data-text="4.3. Diplôme">4.3. Diplôme</a></li>
-        </ul>
-      </li>
-      <li class="item item5">
-        <a href="#5" data-text="5. Genèse de projet">5. Genèse de projet</a>
-      </li>
-      <li class="item item6">
-        <a href="#6" data-text="6. Motivations">6. Motivations</a>
-      </li>
-      <li>
-        <div class="item item7"><a href="#7" data-text="7. Le métier de développeur web">7. Le métier de développeur
-            web</a></div>
-        <ul>
-          <li class="item"><a href="#7.1" data-text="7.1. Salaire">7.1. Salaire</a></li>
-          <li class="item"><a href="#7.2" data-text="7.2. Pourquoi ce métier ?">7.2. Pourquoi ce métier ?</a></li>
-        </ul>
-      </li>
-      <li class="item item8">
-        <a href="#8" data-text="8. Logement">8. Logement</a>
-      </li>
-      <li class="item item9">
-        <a href="#9" data-text="9. Tableau de prêt">9. Tableau de prêt</a>
-      </li>
-    </ul>
-  </div>
-  <section id="cover" class="cover">
-    <div class="circle"></div>
-    <div>
-      <h1>Projet d'études</h1>
-      <h3>Baptiste DAUPHOUY</h3>
-      <div class="contact">
-        <div>
-          <i class="fas fa-phone-alt"></i>
-          <span>0621629748</span>
-        </div>
-        <div>
-          <i class="fas fa-envelope"></i>
-          <span>dauphouy.baptiste@gmail.com</span>
-        </div>
-      </div>
-    </div>
-    <p class="date">17/09/2020</p>
-  </section>
-  <section id="summary" class="container summary">
+  <section id="summary" class="container">
     <h1 class="title">Sommaire</h1>
     <ul>
-      <li class="item">
+      <li class="nav-item">
         <a href="#1" data-text="1. Présentation personnelle">1. Présentation personnelle</a>
       </li>
-      <li class="item">
+      <li class="nav-item">
         <a href="#2" data-text="2. Nature du projet">2. Nature du projet</a>
       </li>
-      <li class="item">
+      <li class="nav-item">
         <a href="#3" data-text="3. L'école">3. L'école</a>
       </li>
       <li>
-        <div class="item"><a href="#4" data-text="4. La formation">4. La formation</a></div>
+        <div class="nav-item"><a href="#4" data-text="4. La formation">4. La formation</a></div>
         <ul>
-          <li class="item"><a href="#4.1" data-text="4.1. Cursus">4.1. Cursus</a></li>
-          <li class="item"><a href="#4.2" data-text="4.2. Points forts">4.2. Points forts</a></li>
-          <li class="item"><a href="#4.3" data-text="4.3. Diplôme">4.3. Diplôme</a></li>
+          <li class="nav-item"><a href="#4.1" data-text="4.1. Cursus">4.1. Cursus</a></li>
+          <li class="nav-item"><a href="#4.2" data-text="4.2. Points forts">4.2. Points forts</a></li>
+          <li class="nav-item"><a href="#4.3" data-text="4.3. Diplôme">4.3. Diplôme</a></li>
         </ul>
       </li>
-      <li class="item">
+      <li class="nav-item">
         <a href="#5" data-text="5. Genèse de projet">5. Genèse de projet</a>
       </li>
-      <li class="item">
+      <li class="nav-item">
         <a href="#6" data-text="6. Motivations">6. Motivations</a>
       </li>
       <li>
-        <div class="item"><a href="#7" data-text="7. Le métier de développeur web">7. Le métier de développeur
+        <div class="nav-item"><a href="#7" data-text="7. Le métier de développeur web">7. Le métier de développeur
             web</a></div>
         <ul>
-          <li class="item"><a href="#7.1" data-text="7.1. Salaire">7.1. Salaire</a></li>
-          <li class="item"><a href="#7.2" data-text="7.2. Pourquoi ce métier ?">7.2. Pourquoi ce métier ?</a></li>
+          <li class="nav-item"><a href="#7.1" data-text="7.1. Salaire">7.1. Salaire</a></li>
+          <li class="nav-item"><a href="#7.2" data-text="7.2. Pourquoi ce métier ?">7.2. Pourquoi ce métier ?</a></li>
         </ul>
       </li>
-      <li class="item">
+      <li class="nav-item">
         <a href="#8" data-text="8. Logement">8. Logement</a>
       </li>
-      <li class="item item9">
-        <a href="#9" data-text="9. Tableau de prêt">9. Tableau de prêt</a>
+      <li class="nav-item">
+        <a href="#9" data-text="9. Recettes et charges">9. Recettes et charges</a>
+      </li>
+      <li class="nav-item">
+        <a href="#10" data-text="10. Plan de financement">10. Plan de financement</a>
+      </li>
+      <li class="nav-item">
+        <a href="#11" data-text="11. Tableau de prêt">11. Tableau de prêt</a>
       </li>
     </ul>
   </section>
-  <section id="1" class="container c1">
+  <section id="1" class="container">
     <div>
       <h1 class="title">1. Présentation personnelle</h1>
       <p class="subtitle">
         Je m’appelle Baptiste DAUPHOUY, j’ai 16 ans et je suis en classe de terminale générale spécialités mathématiques
-        et Sciences Economiques et Sociales avec option mathématiques expertes au Lycée Saint-Sauveur à Redon.
+        et sciences économiques et sociales avec option mathématiques expertes au lycée Saint-Sauveur à Redon.
       </p>
     </div>
   </section>
-  <section id="2" class="container c2 ">
+  <section id="2" class="container">
     <div>
       <h1 class="title">2. Nature du projet</h1>
       <p class="subtitle">
@@ -145,7 +84,7 @@
       </p>
     </div>
   </section>
-  <section id="3" class="container c3">
+  <section id="3" class="container">
     <div>
       <h1 class="title">3. L’école</h1>
       <p class="subtitle">
@@ -163,10 +102,10 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3122.064537272478!2d2.417889436422182!3d48.85186246497188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67283047127a9%3A0x5a597564e51389ac!2sHETIC!5e0!3m2!1sfr!2sfr!4v1600422422273!5m2!1sfr!2sfr"></iframe>
     </div>
   </section>
-  <section id="4" class="container c4">
+  <section id="4" class="container">
     <div>
       <h1 class="title">4. La formation</h1>
-      <h2 class="title2" id="4.1">4.1 Cursus</h2>
+      <h2 class="title-below" id="4.1">4.1 Cursus</h2>
       <p class="subtitle">
         Le cursus du « Bachelor Développeur Web » s’étale sur 3 années, avec une année de formation initiale et deux
         années en alternance au cours desquelles je deviendrai concepteur et développeur de solutions digitales,
@@ -175,7 +114,7 @@
         Le programme de la formation me permettra d’acquérir des compétences solides et polyvalentes que je pourrai
         mettre en application en entreprise dès la fin de la première année.
       </p>
-      <div class="years">
+      <div class="curriculum">
         <div>
           <h3 class="legend">Année 1 - <span>Initiale</span></h3>
           <p class="subtitle">
@@ -183,16 +122,16 @@
           </p>
           <p class="subtitle underline">Modules enseignés</p>
           <ul class="modules">
-            <li class="item">Développement Front End et CSS</li>
-            <li class="item">Javascript</li>
-            <li class="item">PHP</li>
-            <li class="item">Intégration</li>
-            <li class="item">Algorithmique</li>
-            <li class="item">Serveur, Git et Terminal</li>
-            <li class="item">Webdesign et UX</li>
-            <li class="item">Méthodologie de projet</li>
-            <li class="item">Humanité</li>
-            <li class="item">Anglais</li>
+            <li class="mod-item">Développement Front End et CSS</li>
+            <li class="mod-item">Javascript</li>
+            <li class="mod-item">PHP</li>
+            <li class="mod-item">Intégration</li>
+            <li class="mod-item">Algorithmique</li>
+            <li class="mod-item">Serveur, Git et Terminal</li>
+            <li class="mod-item">Webdesign et UX</li>
+            <li class="mod-item">Méthodologie de projet</li>
+            <li class="mod-item">Humanité</li>
+            <li class="mod-item">Anglais</li>
           </ul>
         </div>
         <div>
@@ -202,23 +141,23 @@
           </p>
           <p class="subtitle underline">Modules enseignés</p>
           <ul class="modules">
-            <li class="item">Développement mobile</li>
-            <li class="item">Front et Back End</li>
-            <li class="item">React Natif</li>
-            <li class="item">API Graphql</li>
-            <li class="item">DevOps</li>
-            <li class="item">Gestion de projet</li>
-            <li class="item">UI</li>
-            <li class="item">Droit</li>
-            <li class="item">Développement personnel</li>
-            <li class="item">Anglais</li>
+            <li class="mod-item">Développement mobile</li>
+            <li class="mod-item">Front et Back End</li>
+            <li class="mod-item">React Natif</li>
+            <li class="mod-item">API Graphql</li>
+            <li class="mod-item">DevOps</li>
+            <li class="mod-item">Gestion de projet</li>
+            <li class="mod-item">UI</li>
+            <li class="mod-item">Droit</li>
+            <li class="mod-item">Développement personnel</li>
+            <li class="mod-item">Anglais</li>
           </ul>
         </div>
       </div>
       <p class="subtitle">
-        L’année 3 va permettre d’approfondir encore plus les différent langages et technologies vus en année 2.
+        L’année 3 va permettre d’approfondir encore plus les différents langages et technologies vus en année 2.
       </p>
-      <h2 class="title2" id="4.2">4.2. Points forts</h2>
+      <h2 class="title-below" id="4.2">4.2. Points forts</h2>
       <p class="subtitle">
         L’enseignement inculque des fondamentaux de la programmation et de l’UX/UI, du développement front et backend en
         passant par la gestion de projet en équipe et les devops.
@@ -226,14 +165,14 @@
         Le cursus forme des techniciens polyvalents, critiques, autonomes, capables de travailler en équipe, d’acquérir
         des compétences solides et de prendre du recul sur leurs propres pratiques.
       </p>
-      <h2 class="title2" id="4.3">4.3. Diplôme</h2>
+      <h2 class="title-below" id="4.3">4.3. Diplôme</h2>
       <p class="subtitle">
         Au terme du cursus, la formation « Bachelor Développeur Web » délivre un Titre de Concepteur – Développeur de
         solutions digitales de niveaux 6 enregistré au RNCP.
       </p>
     </div>
   </section>
-  <section id="5" class="container c5">
+  <section id="5" class="container">
     <div>
       <h1 class="title">5. Genèse du projet</h1>
       <p class="subtitle">
@@ -247,16 +186,16 @@
         <br /><br />
         A mon entrée au lycée, mon établissement proposait l’option « Informatique et Création Numérique », ce que j’ai
         choisi sans hésitation.
-        C’est de cette manière que j’ai découvert le développement web et que ça a été le déclic : je voulais devenir
+        C’est de cette manière que j’ai découvert le développement web et ça a été le déclic : je voulais devenir
         développeur web.
         <br /><br />
         Cela fait maintenant trois ans que j’ai découvert la programmation et deux ans que je me suis spécialisé dans la
-        branche du développement web. Grâce aux nombreuses ressources en ligne, cela fait maintenant 2 ans que je me
+        branche du développement web. Grâce aux nombreuses ressources en ligne, je m'entraîne et me
         forme en autodidacte chaque jour.
       </p>
     </div>
   </section>
-  <section id="6" class="container c6">
+  <section id="6" class="container">
     <div>
       <h1 class="title">6. Motivations</h1>
       <p class="subtitle">
@@ -275,7 +214,7 @@
       </p>
     </div>
   </section>
-  <section id="7" class="container c7">
+  <section id="7" class="container">
     <div>
       <h1 class="title">7. Le métier de développeur web</h1>
       <p class="subtitle">
@@ -300,21 +239,21 @@
         Voici les principales :
       </p>
       <ul class="missions">
-        <div class="item">
+        <div class="mission-item">
           <li class="legend">Analyse des besoins</li>
           <p class="subtitle">
             Il est d’abord nécessaire d’analyser les besoins réels pour le projet ainsi que les solutions techniques
             adaptées. Cette mission se conclut par la rédaction d’un cahier des charges.
           </p>
         </div>
-        <div class="item">
+        <div class="mission-item">
           <li class="legend">Conception du site</li>
           <p class="subtitle">
             Dans cette phase, le site est conçu en amont en respectant le cahier des charges. Son architecture
             (visuelle, technique) est définie ainsi que sa base de données.
           </p>
         </div>
-        <div class="item">
+        <div class="mission-item">
           <li class="legend">Développement</li>
           <p class="subtitle">
             On entre ici dans la phase de développement pur qui consiste à rédiger les lignes de codes des différentes
@@ -322,7 +261,7 @@
             les problèmes rencontrés.
           </p>
         </div>
-        <div class="item">
+        <div class="mission-item">
           <li class="legend">Test & mise en production</li>
           <p class="subtitle">
             Le site est testé aussi bien dans son fonctionnement technique que dans sa cohérence visuelle. Les
@@ -330,14 +269,14 @@
             mise en production qui précédera le lancement final du site.
           </p>
         </div>
-        <div class="item">
+        <div class="mission-item">
           <li class="legend">Support technique</li>
           <p class="subtitle">
             Une fois le site en ligne il faudra assurer un support en cas de dysfonctionnement ou encore pour effectuer
             des mises à jour.
           </p class="subtitle">
         </div>
-        <div class="item">
+        <div class="mission-item">
           <li class="legend">Veille</li>
           <p class="subtitle">
             L’activité de veille est constante pour un développeur. Il doit à la
@@ -346,18 +285,18 @@
           </p>
         </div>
       </ul>
-      <h2 class="title2" id="7.1">7.1. Salaire</h2>
+      <h2 class="title-below" id="7.1">7.1. Salaire</h2>
       <p class="subtitle">
-        Le développeur web touche en moyenne 47 900 euros par an en France, en salaire brut.
+        Le développeur web touche en moyenne 47 900 €/an en France, en salaire brut.
       </p>
-      <h2 class="title2" id="7.2">7.2. Pourquoi ce métier ?</h2>
+      <h2 class="title-below" id="7.2">7.2. Pourquoi ce métier ?</h2>
       <p class="subtitle">
         Le métier est très nouveau et en pleine évolution, la demande est très élevée, le salaire est généralement
         attractif et il monte progressivement avec l’expérience.
       </p>
     </div>
   </section>
-  <section id="8" class="container c8">
+  <section id="8" class="container">
     <div>
       <h1 class="title">8. Logement</h1>
       <p class="subtitle">
@@ -372,138 +311,26 @@
       </a>
     </div>
   </section>
-  <section id="9" class="container c9">
+  <section id="9" class="container">
     <div>
-      <h1 class="title">9. Tableau de prêt</h1>
-      <table>
-        <thead>
-          <tr>
-            <th class="db" colspan="3">Prêt étudiant</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th class="right">Montant emprunté</th>
-            <td colspan="2">25000</td>
-          </tr>
-          <tr>
-            <th class="right">Capital à rembourser</th>
-            <td colspan="2">25950</td>
-          </tr>
-          <tr>
-            <th class="right">Année</th>
-            <td colspan="2">2021</td>
-          </tr>
-          <tr>
-            <th class="right">Durée</th>
-            <td colspan="2">3 + 6</td>
-          </tr>
-          <tr>
-            <th class="right">Taux d'intérêt</th>
-            <td colspan="2">1,25</td>
-          </tr>
-          <tr>
-            <th class="right">Taux d'assurance</th>
-            <td colspan="2">0,35</td>
-          </tr>
-          <tr>
-            <th class="db" colspan="3">Année 1</th>
-          </tr>
-          <tr>
-            <th class="lb">Remboursement du capital</th>
-            <th class="lb">Intérêts</th>
-            <th class="lb">Assurances</th>
-          </tr>
-          <tr>
-            <td>4203</td>
-            <td>285</td>
-            <td>96</td>
-          </tr>
-          <tr>
-            <th class="db" colspan="3">Année 2</th>
-          </tr>
-          <tr>
-            <th class="lb">Remboursement du capital</th>
-            <th class="lb">Intérêts</th>
-            <th class="lb">Assurances</th>
-          </tr>
-          <tr>
-            <td>4250</td>
-            <td>238</td>
-            <td>96</td>
-          </tr>
-          <tr>
-            <th class="db" colspan="3">Année 3</th>
-          </tr>
-          <tr>
-            <th class="lb">Remboursement du capital</th>
-            <th class="lb">Intérêts</th>
-            <th class="lb">Assurances</th>
-          </tr>
-          <tr>
-            <td>4298</td>
-            <td>190</td>
-            <td>96</td>
-          </tr>
-          <tr>
-            <th class="db" colspan="3">Année 4</th>
-          </tr>
-          <tr>
-            <th class="lb">Remboursement du capital</th>
-            <th class="lb">Intérêts</th>
-            <th class="lb">Assurances</th>
-          </tr>
-          <tr>
-            <td>4345</td>
-            <td>143</td>
-            <td>96</td>
-          </tr>
-          <tr>
-            <th class="db" colspan="3">Année 5</th>
-          </tr>
-          <tr>
-            <th class="lb">Remboursement du capital</th>
-            <th class="lb">Intérêts</th>
-            <th class="lb">Assurances</th>
-          </tr>
-          <tr>
-            <td>4393</td>
-            <td>95</td>
-            <td>96</td>
-          </tr>
-          <tr>
-            <th class="db" colspan="3">Année 6</th>
-          </tr>
-          <tr>
-            <th class="lb">Remboursement du capital</th>
-            <th class="lb">Intérêts</th>
-            <th class="lb">Assurances</th>
-          </tr>
-          <tr>
-            <td>4440</td>
-            <td>48</td>
-            <td>96</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-  <section id="10" class="container c10">
-    <div>
-      <h1 class="title">10. Compte de résultat prévisionnel</h1>
+      <h1 class="title">9. Recettes et charges</h1>
+      <p class="subtitle">
+        J'ai établis un tableau regroupant mes recettes et charges pour les 3 années de la formation. Cette dernière se divisant en 1 année initiale à l'école, puis 2 ans en alternance (1 semaine à l'école et 3 semaines en entreprise), j'obtiendrai dès la deuxième année des revenus en tant qu'apprenti.
+        D'après les grilles en vigueur, le salaire d'un apprenti de plus de 18 ans lors de la première année, s'élève à environ 660 €/mois. La deuxième année il à environ 785 €/mois.
+      </p>
       <table>
         <thead>
           <tr>
             <th class="empty"></th>
-            <th class="db">Année 1</th>
-            <th class="db">Année 2</th>
-            <th class="db">Année 3</th>
+            <th class="dark">Année 1</th>
+            <th class="dark">Année 2</th>
+            <th class="dark">Année 3</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th class="upper db">Recettes</th>
-            <td class="db" colspan="3"></td>
+            <th class="dark">Recettes</th>
+            <td class="dark" colspan="3"></td>
           </tr>
           <tr>
             <th>Revenu alternance</th>
@@ -513,19 +340,19 @@
           </tr>
           <tr>
             <th>Aide familiale</th>
-            <td>0</td>
-            <td>8000</td>
-            <td>9000</td>
+            <td>2500</td>
+            <td>6000</td>
+            <td>2500</td>
           </tr>
           <tr>
-            <th class="lb">Total recettes</th>
-            <th class="lb">0</th>
-            <th class="lb">8000</th>
-            <th class="lb">9000</th>
+            <th class="light">Total recettes</th>
+            <th class="light">2500</th>
+            <th class="light">14000</th>
+            <th class="light">11500</th>
           </tr>
           <tr>
-            <th class="upper db">Charges</th>
-            <td class="db" colspan="3"></td>
+            <th class="dark">Charges</th>
+            <td class="dark" colspan="3"></td>
           </tr>
           <tr>
             <th>Ecole</th>
@@ -570,10 +397,10 @@
             <td>600</td>
           </tr>
           <tr>
-            <th class="lb">Total charges</th>
-            <th class="lb">17570</th>
-            <th class="lb">17570</th>
-            <th class="lb">17570</th>
+            <th class="light">Total charges</th>
+            <th class="light">17570</th>
+            <th class="light">17570</th>
+            <th class="light">17570</th>
           </tr>
           <tr>
             <th>Intérêts</th>
@@ -588,10 +415,207 @@
             <td>96</td>
           </tr>
           <tr>
-            <th class="lb">Résultats</th>
-            <th class="lb">-15166</th>
-            <th class="lb">-3666</th>
-            <th class="lb">-6166</th>
+            <th class="light">Résultats</th>
+            <th class="light">-15166</th>
+            <th class="light">-3666</th>
+            <th class="light">-6166</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section id="10" class="container">
+    <div>
+      <h1 class="title">10. Plan de financement</h1>
+      <p class="subtitle">
+        Suite à l'évaluation financière de ma formation sur 3 ans, vous trouverez ci-dessous le plan de financement me permettant de mener à bien mon projet.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th class="dark" colspan="2">Besoins pour 3 ans</th>
+            <th class="dark" colspan="2">Ressources pour 3 ans</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="align-left">Ecole</th>
+            <td>22500</td>
+            <th class="empty"></th>
+            <td class="empty border-right"></td>
+          </tr>
+          <tr>
+            <th class="align-left">Alimentation</th>
+            <td>7500</td>
+            <th class="align-left">Revenu alternance</th>
+            <td>17340</td>
+          </tr>
+          <tr>
+            <th class="align-left">Logement</th>
+            <td>18000</td>
+            <th class="empty"></th>
+            <td class="empty border-right"></td>
+          </tr>
+          <tr>
+            <th class="align-left">Assurances</th>
+            <td>543</td>
+            <th class="empty"></th>
+            <td class="empty border-right"></td>
+          </tr>
+          <tr>
+            <td class="align-left sub-category">Habitation</th>
+            <td>255</td>
+            <th class="align-left">Aide familiale</th>
+            <td>11000</td>
+          </tr>
+          <tr>
+            <td class="align-left sub-category">Prêt</th>
+            <td>288</td>
+            <th class="empty"></th>
+            <td class="empty border-right"></td>
+          </tr>
+          <tr>
+            <th class="align-left">Forfait mobile</th>
+            <td>360</td>
+            <th class="empty"></th>
+            <td class="empty border-right"></td>
+          </tr>
+          <tr>
+            <th class="align-left">Transports</th>
+            <td>2595</td>
+            <th class="align-left">Prêt étudiant</th>
+            <td>24958</td>
+          </tr>
+          <tr>
+            <th class="align-left">Divers</th>
+            <td>1800</td>
+            <th class="empty"></th>
+            <td class="empty border-right"></td>
+          </tr>
+          <tr>
+            <th class="light align-left">Total</th>
+            <th class="light">53298</td>
+            <th class="light align-left">Total</th>
+            <th class="light">53298</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section id="11" class="container">
+    <div>
+      <h1 class="title">11. Tableau de prêt</h1>
+      <p class="subtitle">
+        D'après le plan de financement, j'ai besoin de 25 000 € pour réaliser mon projet. J'ai réalisé ci-dessous une simulation de ce que me coûterait le prêt. Le montant de 26 000 € de capital à rembourser est dû à la prise en compte des intérêts au cours de ma formation de 3 ans (soit 1 000 € d'intérêts). A l'issue de mes études, ne voulant pas avoir plus de 400 € de remboursement par mois, j'en déduit qu'il me faudrait 6 ans pour solder le prêt (ce qui me reviendrait à 383 €/mois).
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th class="dark" colspan="3">Prêt étudiant</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="align-right">Montant emprunté</th>
+            <td colspan="2">25000</td>
+          </tr>
+          <tr>
+            <th class="align-right">Capital à rembourser</th>
+            <td colspan="2">26000</td>
+          </tr>
+          <tr>
+            <th class="align-right">Année</th>
+            <td colspan="2">2021</td>
+          </tr>
+          <tr>
+            <th class="align-right">Durée</th>
+            <td colspan="2">3 + 6</td>
+          </tr>
+          <tr>
+            <th class="align-right">Taux d'intérêt</th>
+            <td colspan="2">1,25</td>
+          </tr>
+          <tr>
+            <th class="align-right">Taux d'assurance</th>
+            <td colspan="2">0,35</td>
+          </tr>
+          <tr>
+            <th class="dark" colspan="3">Année 1</th>
+          </tr>
+          <tr>
+            <th class="light">Remboursement du capital</th>
+            <th class="light">Intérêts</th>
+            <th class="light">Assurances</th>
+          </tr>
+          <tr>
+            <td>4203</td>
+            <td>285</td>
+            <td>96</td>
+          </tr>
+          <tr>
+            <th class="dark" colspan="3">Année 2</th>
+          </tr>
+          <tr>
+            <th class="light">Remboursement du capital</th>
+            <th class="light">Intérêts</th>
+            <th class="light">Assurances</th>
+          </tr>
+          <tr>
+            <td>4250</td>
+            <td>238</td>
+            <td>96</td>
+          </tr>
+          <tr>
+            <th class="dark" colspan="3">Année 3</th>
+          </tr>
+          <tr>
+            <th class="light">Remboursement du capital</th>
+            <th class="light">Intérêts</th>
+            <th class="light">Assurances</th>
+          </tr>
+          <tr>
+            <td>4298</td>
+            <td>190</td>
+            <td>96</td>
+          </tr>
+          <tr>
+            <th class="dark" colspan="3">Année 4</th>
+          </tr>
+          <tr>
+            <th class="light">Remboursement du capital</th>
+            <th class="light">Intérêts</th>
+            <th class="light">Assurances</th>
+          </tr>
+          <tr>
+            <td>4345</td>
+            <td>143</td>
+            <td>96</td>
+          </tr>
+          <tr>
+            <th class="dark" colspan="3">Année 5</th>
+          </tr>
+          <tr>
+            <th class="light">Remboursement du capital</th>
+            <th class="light">Intérêts</th>
+            <th class="light">Assurances</th>
+          </tr>
+          <tr>
+            <td>4393</td>
+            <td>95</td>
+            <td>96</td>
+          </tr>
+          <tr>
+            <th class="dark" colspan="3">Année 6</th>
+          </tr>
+          <tr>
+            <th class="light">Remboursement du capital</th>
+            <th class="light">Intérêts</th>
+            <th class="light">Assurances</th>
+          </tr>
+          <tr>
+            <td>4440</td>
+            <td>48</td>
+            <td>96</td>
           </tr>
         </tbody>
       </table>
@@ -616,3 +640,12 @@
 </body>
 
 </html>
+
+<!-- suite à l'évaluation financière de ma formation sur 3 ans, vous trouverez ci-dessous le plan de financement me permettant de mener à bien mon projet. -->
+
+<!-- 1. ressources et charges -->
+<!-- 2. plan de financement -->
+<!-- 3. tableau de prêt -->
+
+<!-- ajouter des remarques personnelles (facultatif) -->
+<!-- phrase de fin (avec lien du site) -->

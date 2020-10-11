@@ -1,11 +1,8 @@
 #summary {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #summary > ul {
   margin-top: 20px;
-}
-
-ul {
   list-style: none;
 }
