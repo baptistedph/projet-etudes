@@ -147,20 +147,8 @@ li ul .nav-item a {
 
 @media (max-width: 1280px) {
 
-  .container:not(.summary) {
-    align-items: flex-start;
-  }
-
   .container > div {
-    width: 60%;
-  }
-
-}
-
-@media (max-width: 1024px) {
-
-  .container > div {
-    width: 50%;
+    width: 90%;
   }
 
 }
