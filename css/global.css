@@ -22,6 +22,8 @@
 
 .container > div {
   width: 50%;
+  position: relative;
+  height: 100%;
 }
 
 .title {
@@ -77,18 +79,28 @@ ul + .title-below {
   font-size: 15px;
 }
 
-.modules {
+.modules,
+.sources {
   margin-top: 30px;
   list-style: square inside;
 }
 
 .nav-item,
-.mod-item {
+.list-item {
   margin-top: 10px;
   overflow: hidden;
   color: black;
   font-size: 20px;
   font-weight: 500;
+}
+
+.sources .list-item {
+  color: #89ACF3;
+  word-break: break-all;
+}
+
+.list-item a {
+  color: var(--blue);
 }
 
 .nav-item a {
@@ -136,6 +148,10 @@ li ul .nav-item a {
 }
 
 .missions {
+  list-style: none;
+}
+
+.missions .legend {
   list-style: square inside;
 }
 
@@ -144,6 +160,37 @@ li ul .nav-item a {
   margin-top: 30px;
 }
 
+.go-top {
+  width: 0;
+  height: 50px;
+  background: var(--blue);
+  border-radius: 5px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s, 
+              width 0s 0.4s, 
+              padding 0s 0.4s;
+  z-index: 999;
+}
+
+.go-top.active {
+  opacity: 1;
+  width: 50px;
+  padding: 10px;
+  transition: opacity 0.4s, 
+              width 0s 0s, 
+              padding 0s 0s;
+}
+
+.go-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media (max-width: 1280px) {
 
@@ -172,7 +219,8 @@ li ul .nav-item a {
     line-height: 25px;
   }
 
-  .nav-item {
+  .nav-item,
+  .list-item {
     font-size: 15px;
   }
 

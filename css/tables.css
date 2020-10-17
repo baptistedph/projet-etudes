@@ -44,6 +44,14 @@ table th {
   border-right: solid 1px black;
 }
 
+@media (max-width: 768px) {
+
+  table {
+    font-size: 15px;
+  }
+
+}
+
 @media (max-width: 576px) {
 
   table {
