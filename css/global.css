@@ -10,6 +10,7 @@
 
 :root {
   --blue: #89ACF3;
+  --dark-gray: #888;
 }
 
 .container {
@@ -32,7 +33,7 @@
 
 .title-below {
   font-size: 30px;
-  color: #ddd;
+  color: var(--dark-gray);
   font-weight: 600;
   margin-top: 10px;
 }
@@ -123,7 +124,7 @@ ul + .title-below {
 }
 
 li ul .nav-item a {
-  color: #ddd;
+  color: var(--dark-gray);
   font-size: 15px;
   margin-left: 25px;
 }
