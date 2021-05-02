@@ -1,3 +1,7 @@
+:root {
+  --blue: #3269D1;
+}
+
 table {
   border-collapse: collapse; 
   margin-top: 50px;
@@ -28,11 +32,11 @@ table th {
 }
 
 .light {
-  background: #8aacf344;
+  background: #3269D144;
 }
 
 .dark {
-  background: #8aacf3;
+  background: #3269D1;
   color: white;
 }
 
