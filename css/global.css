@@ -95,7 +95,7 @@ ul + .title-below {
 }
 
 .sources .list-item {
-  color: #89ACF3;
+  color: var(--blue);
   word-break: break-all;
 }
 
@@ -123,7 +123,7 @@ ul + .title-below {
 }
 
 li ul .nav-item a {
-  color: #aaa;
+  color: #ddd;
   font-size: 15px;
   margin-left: 25px;
 }
