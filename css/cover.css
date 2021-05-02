@@ -16,7 +16,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  background: url(../images/me.jpg);
+  background: url(../images/me.webp);
   background-size: cover;
   background-position: 50px 100px;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
