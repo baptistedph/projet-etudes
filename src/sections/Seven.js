@@ -8,7 +8,7 @@ import {
 
 const Seven = ({ styles }) => {
   return (
-    <Container padding={styles.paddings.p1}>
+    <Container padding={styles.paddings.p1} id="7">
       <Content>
         <Title size={styles.titles.t2} color={styles.palette.blacks.b1}>
           7. Le métier de développeur web
@@ -149,7 +149,8 @@ const Seven = ({ styles }) => {
         <Subtitle
           size={styles.subtitles.s1}
           color={styles.palette.blacks.b2}
-          style={{ marginTop: '40px' }}>
+          style={{ marginTop: '40px' }}
+          id="7.1">
           7.1. Salaire
         </Subtitle>
         <Paragraph
@@ -162,7 +163,8 @@ const Seven = ({ styles }) => {
         <Subtitle
           size={styles.subtitles.s1}
           color={styles.palette.blacks.b2}
-          style={{ marginTop: '40px' }}>
+          style={{ marginTop: '40px' }}
+          id="7.2">
           7.2. Pourquoi ce métier ?
         </Subtitle>
         <Paragraph

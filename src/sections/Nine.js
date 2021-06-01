@@ -3,7 +3,7 @@ import TableNine from '../components/TableNine'
 
 const Nine = ({ styles, mobile }) => {
   return (
-    <Container padding={styles.paddings.p1}>
+    <Container padding={styles.paddings.p1} id="9">
       <Content>
         <Title size={styles.titles.t2} color={styles.palette.blacks.b1}>
           9. Recettes et charges

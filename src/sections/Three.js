@@ -9,7 +9,7 @@ import styled from 'styled-components'
 
 const Three = ({ styles }) => {
   return (
-    <Container padding={styles.paddings.p1}>
+    <Container padding={styles.paddings.p1} id="3">
       <Content>
         <Title size={styles.titles.t2} color={styles.palette.blacks.b1}>
           3. L’école

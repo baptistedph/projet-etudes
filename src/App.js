@@ -12,21 +12,33 @@ import Nine from './sections/Nine'
 import Ten from './sections/Ten'
 import End from './sections/End'
 import Footer from './partials/Footer'
+import { NavLink } from './components/Components'
+import styled from 'styled-components'
 import { useState, useEffect } from 'react'
 
 const App = () => {
   const [mobile, setMobile] = useState(false)
+  const [goBackToSummary, setGoBackToSummary] = useState(false)
 
   const isMobile = () => {
     return window.innerWidth <= 1024
   }
 
+  const scroll = () => {
+    return window.scrollY > 2 * window.innerHeight
+  }
+
   useEffect(() => {
     isMobile() ? setMobile(true) : setMobile(false)
+    scroll() ? setGoBackToSummary(true) : setGoBackToSummary(false)
   }, [])
 
   window.addEventListener('resize', () => {
     isMobile() ? setMobile(true) : setMobile(false)
+  })
+
+  window.addEventListener('scroll', () => {
+    scroll() ? setGoBackToSummary(true) : setGoBackToSummary(false)
   })
 
   const styles = {
@@ -72,6 +84,17 @@ const App = () => {
 
   return (
     <>
+      {goBackToSummary && (
+        <NavItem>
+          <NavLink
+            href="#summary"
+            data-text="Revenir au sommaire"
+            color={styles.palette.blacks.b1}
+            size={styles.paragraphs.p1}>
+            Revenir au sommaire
+          </NavLink>
+        </NavItem>
+      )}
       <Homepage styles={styles} />
       <Summary styles={styles} />
       <One styles={styles} />
@@ -89,5 +112,16 @@ const App = () => {
     </>
   )
 }
+
+const NavItem = styled.div`
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  z-index: 99;
+  display: inline-block;
+  overflow: hidden;
+  background: white;
+  padding: 2px 5px;
+`
 
 export default App

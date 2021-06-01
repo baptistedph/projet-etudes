@@ -11,7 +11,7 @@ import styled from 'styled-components'
 
 const Four = ({ styles }) => {
   return (
-    <Container padding={styles.paddings.p1}>
+    <Container padding={styles.paddings.p1} id="4">
       <Content>
         <Title size={styles.titles.t2} color={styles.palette.blacks.b1}>
           4. La formation
@@ -19,7 +19,8 @@ const Four = ({ styles }) => {
         <Subtitle
           size={styles.subtitles.s1}
           color={styles.palette.blacks.b2}
-          style={{ marginTop: '20px' }}>
+          style={{ marginTop: '20px' }}
+          id="4.1">
           4.1 Cursus
         </Subtitle>
         <Paragraph
@@ -217,7 +218,8 @@ const Four = ({ styles }) => {
         <Subtitle
           size={styles.subtitles.s1}
           color={styles.palette.blacks.b2}
-          style={{ marginTop: '40px' }}>
+          style={{ marginTop: '40px' }}
+          id="4.2">
           4.2 Points forts
         </Subtitle>
         <Paragraph
@@ -239,7 +241,8 @@ const Four = ({ styles }) => {
         <Subtitle
           size={styles.subtitles.s1}
           color={styles.palette.blacks.b2}
-          style={{ marginTop: '40px' }}>
+          style={{ marginTop: '40px' }}
+          id="4.3">
           4.3. Diplôme
         </Subtitle>
         <Paragraph

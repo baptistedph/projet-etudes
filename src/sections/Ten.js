@@ -3,7 +3,7 @@ import TableTen from '../components/TableTen'
 
 const Ten = ({ styles, mobile }) => {
   return (
-    <Container padding={styles.paddings.p1}>
+    <Container padding={styles.paddings.p1} id="10">
       <Content>
         <Title size={styles.titles.t2} color={styles.palette.blacks.b1}>
           10. Plan de financement

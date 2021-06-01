@@ -1,9 +1,18 @@
 import styled from 'styled-components'
-import { Container, Content, Title } from '../components/Components'
+import {
+  Container,
+  Content,
+  Title,
+  NavLink,
+  NavItem,
+} from '../components/Components'
 
 const Summary = ({ styles }) => {
   return (
-    <Container style={{ minHeight: '100vh' }} padding={styles.paddings.p1}>
+    <Container
+      style={{ minHeight: '100vh' }}
+      id="summary"
+      padding={styles.paddings.p1}>
       <Content
         style={{
           display: 'flex',
@@ -167,32 +176,5 @@ const Summary = ({ styles }) => {
 }
 
 const Nav = styled.nav``
-
-const NavItem = styled.li`
-  margin-top: 10px;
-  overflow: hidden;
-  color: black;
-  font-weight: 500;
-`
-
-const NavLink = styled.a`
-  text-decoration: none;
-  color: ${props => props.color};
-  font-size: ${props => props.size};
-  display: inline-block;
-  position: relative;
-  transition: transform 0.4s;
-
-  &::after {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    top: 100%;
-  }
-
-  &:hover {
-    transform: translateY(-100%);
-  }
-`
 
 export default Summary
