@@ -47,10 +47,10 @@ const App = () => {
       t2: mobile ? '30px' : '50px',
     },
     subtitles: {
-      s1: '30px',
+      s1: mobile ? '20px' : '30px',
     },
     paragraphs: {
-      p1: '20px',
+      p1: mobile ? '18px' : '20px',
       p2: '15px',
     },
     legends: {

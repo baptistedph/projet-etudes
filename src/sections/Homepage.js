@@ -24,7 +24,7 @@ const Homepage = ({ styles }) => {
           style={{
             position: 'relative',
             top: '50%',
-            transform: 'translateY(calc(-50% - 60px))',
+            transform: 'translateY(calc(-50%))',
           }}>
           <Title size={styles.titles.t1} color={styles.palette.blacks.b1}>
             Projet
@@ -51,6 +51,9 @@ const Header = styled.header`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
 `
 
 const Title = styled.h1`
